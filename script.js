@@ -47,6 +47,18 @@ userForm.on("submit", function (event) {
                     console.log(data);
                     console.log(data.value);
                     $("#uvIndex").text(data.value);
+                    if (data.value > 8.0) {
+                        $("#uvIndex").removeClass().addClass("badge bg-danger");
+                    }
+                    else if (6.0 <= data.value && data.value < 8.0) {
+                        $("#uvIndex").removeClass().addClass("badge bg-warning");
+                    }
+                    else if (3.0 <= data.value && data.value < 6.0) {
+                        $("#uvIndex").removeClass().addClass("badge bg-warning");
+                    }
+                    else if (data.value < 3.0) {
+                        $("#uvIndex").removeClass().addClass("badge bg-success");
+                    };
                 });
         });
 
@@ -89,30 +101,3 @@ $(document).ready(function() {
             
         });
 };
-// function displayFiveDayForecast() {
-//     var apiKey = "61a0aedf1350dfb09ed3b6a74345bb6e";
-//     var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + inputTerm + "&Appid=" + apiKey + "&units=imperial";
-//     var inputTerm = inputTermEl.val();
-
-
-//     fetch(weatherQueryURL)
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (data) {
-//             var forecastTime = data.list
-//                 for (var i = 0; i < forecastTime.length; i++) {
-//                     if (forecastTime[i].dt_txt[12] === "2") {
-//                         console.log(data);
-//                         var forecast_date = data.list[i].dt_txt;
-//                         var forecast_date_display = forecast_date.charAt(5) + forecast_date.charAt(6) + "/" + forecast_date.charAt(8) + forecast_date.charAt(9) +
-//                             "/" + forecast_date.charAt(0) + forecast_date.charAt(1) + forecast_date.charAt(2) + forecast_date.charAt(3);
-//                         console.log(forecast_display);
-//                         if (forecast_date_display === 0) {
-//                             console.log(forecast_date_display);
-//                         } 
-//                     }
-//                 }
-//                 // forecastdisplay = true;
-//             })
-//         }

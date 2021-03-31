@@ -30,114 +30,100 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action" id="list-home-list"
-                                href="#list-home">Home</a>
+                            <a class="list-group-item list-group-item-action" id="list-home-list" href="#list-home"></a>
                             <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                href="#list-profile">Profile</a>
+                                href="#list-profile"></a>
                             <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                href="#list-messages">Messages</a>
+                                href="#list-messages"></a>
                             <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                href="#list-settings">Settings</a>
+                                href="#list-settings"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </aside>
-        <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-row">
             <div class="col-12 col-md-8">
                 <div id="right side" class="p-3 mb-2 text-dark">
-                    <section id="top">
+                    <section>
                         <div class="border border-secondary rounded">
-                            <h2 id="cityName">Today</h2>
+                            <h3 class="my-2"></h3>
+                            <h2 id="cityName"></h2>
                             <h2 id="currentDate"></h2>
-                            <ul>
-                                <li>Temperature: <span id="temperature"></span></li>
-                                <li>Humidity: <span id="humidity"></span></li>
-                            </ul>
+                            <img id="currentWeatherIcon" src="http://openweathermap.org/img/wn/02d@2x.png" />
+                                <p>Temperature: <span id="temperature"></span></p>
+                                <p>Humidity: <span id="humidity"></span></p>
+                                <p>Wind Speed: <span id="windSpeed"></span></p>
+                                <p>UV Index: <span id="uvIndex"></span></p>
                         </div>
                     </section>
                     <section id="bottom">
                         <div>
                             <h2>5-Day Forecast:</h2>
-                            <div class="d-flex flex-row justify-content-between">
-                                <div class="card" style="width: 18rem">
+                            <div class="d-flex justify-content-around">
+                                <div class="card p-3 mb-2 bg-primary text-white" style="width: 18rem">
                                     <div class="card-body">
                                         <h5 id="currentDatePlus1"></h5>
                                         <p id="card-text">
-                                            <img
-                                            id="iconPlus0"
-                                            src="http://openweathermap.org/img/wn/02d@2x.png"
-                                            width="60"
-                                          />
-                                        
-                                        <ul>
-                                            <li>Temperature: <span id="tempPlus0"></span></li>
-                                            <li>Humidity: <span id="humidPlus0"></span></li>
-                                        </ul>
+                                            <img id="iconPlus0" src="http://openweathermap.org/img/wn/02d@2x.png"
+                                                width="60" />
+
+                                            <ul>
+                                                <li>Temperature: <span id="tempPlus0"></span></li>
+                                                <li>Humidity: <span id="humidPlus0"></span></li>
+                                            </ul>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card" style="width: 18rem">
+                                <div class="card p-3 mb-2 bg-primary text-white" style="width: 18rem">
                                     <div class="card-body">
                                         <h5 id="currentDatePlus2"></h5>
                                         <p id="card-text">
-                                        <img
-                                        id="iconPlus1"
-                                        src="http://openweathermap.org/img/wn/02d@2x.png"
-                                        width="60"
-                                      />
-                                        <ul>
-                                            <li>Temperature: <span id="tempPlus1"></span></li>
-                                            <li>Humidity: <span id="humidPlus1"></span></li>
-                                        </ul>
-                                    </p>
+                                            <img id="iconPlus1" src="http://openweathermap.org/img/wn/02d@2x.png"
+                                                width="60" />
+                                            <ul>
+                                                <li>Temperature: <span id="tempPlus1"></span></li>
+                                                <li>Humidity: <span id="humidPlus1"></span></li>
+                                            </ul>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="card" style="width: 18rem">
+                                <div class="card p-3 mb-2 bg-primary text-white" style="width: 18rem">
                                     <div class="card-body">
                                         <h5 id="currentDatePlus3"></h5>
                                         <p id="card-text">
-                                            <img
-                                            id="iconPlus2"
-                                            src="http://openweathermap.org/img/wn/02d@2x.png"
-                                            width="60"
-                                          />
-                                        <ul>
-                                            <li>Temperature: <span id="tempPlus2"></span></li>
-                                            <li>Humidity: <span id="humidPlus2"></span></li>
-                                        </ul>
+                                            <img id="iconPlus2" src="http://openweathermap.org/img/wn/02d@2x.png"
+                                                width="60" />
+                                            <ul>
+                                                <li>Temperature: <span id="tempPlus2"></span></li>
+                                                <li>Humidity: <span id="humidPlus2"></span></li>
+                                            </ul>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card" style="width: 18rem">
+                                <div class="card p-3 mb-2 bg-primary text-white" style="width: 18rem">
                                     <div class="card-body">
                                         <h5 id="currentDatePlus4"></h5>
                                         <p id="card-text">
-                                            <img
-                                            id="iconPlus3"
-                                            src="http://openweathermap.org/img/wn/02d@2x.png"
-                                            width="60"
-                                          />
-                                        <ul>
-                                            <li>Temperature: <span id="tempPlus3"></span></li>
-                                            <li>Humidity: <span id="humidPlus3"></span></li>
-                                        </ul>
+                                            <img id="iconPlus3" src="http://openweathermap.org/img/wn/02d@2x.png"
+                                                width="60" />
+                                            <ul>
+                                                <li>Temperature: <span id="tempPlus3"></span></li>
+                                                <li>Humidity: <span id="humidPlus3"></span></li>
+                                            </ul>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="card" style="width: 18rem">
+                                <div class="card p-3 mb-2 bg-primary text-white" style="width: 18rem">
                                     <div class="card-body">
                                         <h5 id="currentDatePlus5"></h5>
                                         <p id="card-text">
-                                            <img
-                                            id="iconPlus4"
-                                            src="http://openweathermap.org/img/wn/02d@2x.png"
-                                            width="60"
-                                          />
-                                        <ul>
-                                            <li>Temperature: <span id="tempPlus4"></span></li>
-                                            <li>Humidity: <span id="humidPlus4"></span></li>
-                                        </ul>
+                                            <img id="iconPlus4" src="http://openweathermap.org/img/wn/02d@2x.png"
+                                                width="60" />
+                                            <ul>
+                                                <li>Temperature: <span id="tempPlus4"></span></li>
+                                                <li>Humidity: <span id="humidPlus4"></span></li>
+                                            </ul>
                                         </p>
                                     </div>
                                 </div>
