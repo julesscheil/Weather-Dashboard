@@ -12,14 +12,17 @@
 </head>
 
 <body>
+    <!-- header  -->
     <header class="p-3 mb-2 bg-dark text-white text-center">
         <h1>Weather Dashboard</h1>
     </header>
-
+<!-- Main Content -->
     <main class="d-flex">
+        <!-- Aside content -->
         <aside class="col-12 col-md-4">
             <div id="left side" class="p-3 mb-2 bg-light text-dark">
                 <h2>Search for a city:</h2>
+                <!-- Search Bar -->
                 <form id="user-form">
                     <label class="form-label" for="city"></label>
                     <input name="city" id="input-term" type="text" autofocus="true" class="form-input" />
@@ -27,6 +30,7 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
+                <!-- History bar -->
                 <div class="row">
                     <div class="col-4">
                         <div class="list-group" id="list-tab" role="tablist">
@@ -42,9 +46,11 @@
                 </div>
             </div>
         </aside>
+        <!-- Right side content -->
         <div class="d-flex flex-row">
             <div class="col-12 col-md-8">
                 <div id="right side" class="p-3 mb-2 text-dark">
+                    <!-- todays weather report -->
                     <section>
                         <div class="border border-secondary rounded">
                             <h3 class="my-2"></h3>
@@ -57,6 +63,7 @@
                                 <p>UV Index: <span id="uvIndex"></span></p>
                         </div>
                     </section>
+                    <!-- Forecast weather report -->
                     <section id="bottom">
                         <div>
                             <h2>5-Day Forecast:</h2>
