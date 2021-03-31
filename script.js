@@ -81,6 +81,10 @@ $(document).ready(function() {
                 var humidity =daysList[i].main.humidity;
                 console.log(temp);
                 console.log(humidity);
+                var weatherURL = "https://openweathermap.org/img/wn/" + (daysList[i].weather[0].icon).slice(0, -1) + "d@2x.png";
+                $(`#iconPlus${i}`).attr("src", weatherURL);
+                $(`#tempPlus${i}`).text(temp + " °F");
+                $(`#humidPlus${i}`).text(humidity + " °%");
             };
             
         });
